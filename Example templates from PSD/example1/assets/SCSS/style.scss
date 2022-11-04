@@ -1,0 +1,527 @@
+@import "mixins";
+@import "variables";
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1250px;
+}
+
+.title {
+  color: #cc9900;
+  line-height: 44px;
+  text-align: center;
+
+  @include font($ffYesevaOne, 400, 36px);
+}
+
+.description {
+  line-height: 24px;
+  text-align: center;
+
+  @include font($ffLato, 400, 16px);
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  max-width: $innerMaxWidth;
+}
+
+
+/*=========Header=========*/
+
+
+header {
+  width: 100%;
+  height: 110px;
+  position: absolute;
+
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+.header__inner {
+  width: 100%;
+  height: 100%;
+  //padding: 35px 0;
+  max-height: 110px;
+  position: relative;
+
+  @include content(flex, row, center, flex-end, $marg0auto);
+}
+
+.header__logo {
+  left: -35px;
+  position: absolute;
+}
+
+.header__nav {
+  width: 710px;
+  height: 100%;
+  color: #ffffff;
+
+  @include font($ffGentiumBookBasic, 700, 21px);
+  @include content(flex, row, center, space-between, $margin: 0);
+}
+
+.nav_link {
+  height: 100%;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border-top: 3px solid transparent;
+
+  @include content(flex, row, center, center, $margin: 0);
+
+
+  &.active {
+    //width: 80px;
+    border-top: 3px solid #ffffff;
+  }
+}
+
+.header__social_icons {
+
+  width: 115px;
+  padding: 0 0 0 20px;
+
+  @include content(flex, row, center, space-between, $margin: 0);
+
+  & img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+/*=========Main=========*/
+
+
+.main {
+  width: 100%;
+}
+
+.main_divider {
+  width: 100%;
+  height: 50px;
+
+  background: url("../Images/Main/dividerMainYellow.png") no-repeat 46% 50%;
+}
+
+//Intro
+.intro {
+  width: 100%;
+  height: 750px;
+  background: url("../Images/Main/Intro/intro.png") no-repeat top /cover;
+}
+
+.intro__inner {
+  @include content(flex, column, center, center, $marg0auto);
+}
+
+.intro__title {
+  text-align: center;
+
+  h1 {
+    color: #ffffff;
+    @include font($ffYesevaOne, 400, 90px);
+    filter: drop-shadow(0.469px 0.883px 1px rgba(1, 1, 1, 0.64));
+
+    &:nth-child(2) {
+      font-size: 85px;
+    }
+  }
+}
+
+.intro_divider {
+  width: 925px;
+  height: 80px;
+
+  background: url("../Images/Main/Intro/decoration.png") no-repeat center;
+}
+
+.intro__buttons {
+  width: 100%;
+  text-align: center;
+
+  .btn {
+    width: 228px;
+    height: 57px;
+    outline: none;
+
+    &:nth-child(2) {
+      margin-left: 30px;
+    }
+
+    &.black {
+      border: 1px solid #000000;
+      background-color: rgba(0, 0, 0, 0.7019607843137254)
+    }
+
+    &.white {
+      border: 1px solid #ffffff;
+      background-color: rgba(255, 255, 255, 0.2784313725490196);
+    }
+
+    span {
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include font($ffLato, 400, 18px);
+    }
+
+  }
+
+}
+
+
+//About
+.about {
+  width: 100%;
+  min-height: 710px;
+  padding: 42.5px 0;
+
+  background: url("../Images/Main/About/pattern.png") no-repeat center /cover;
+
+  .description {
+    width: 432px;
+    color: #4c4c4c;
+    margin: 30px 0 50px 0;
+  }
+}
+
+.about__inner {
+  @include content(flex, row, center, center, $marg0auto);
+}
+
+.cook {
+  width: 100%;
+  height: 221px;
+
+  background-position: 75% 50%;
+  background-repeat: no-repeat;
+  background-image: url("../Images/Main/About/cook.png");
+}
+
+
+.about_dish-image {
+  width: 100%;
+  height: 625px;
+  background: url("../Images/Main/About/dish.png") no-repeat center;
+
+}
+
+//Ingredients
+.ingredients {
+  width: 100%;
+  padding: 100px 0;
+  min-height: 760px;
+
+  background: url("../Images/Main/Ingredients/ingredients.png") no-repeat center/cover;
+
+  .title {
+    color: #ffffff;
+  }
+
+  .main_divider {
+    background: url("../Images/Main/Ingredients/dividerMainWhite.png") no-repeat 46% 50%;
+  }
+
+  .description {
+    width: 430px;
+    color: #ffffff;
+    margin: $marg0auto;
+  }
+}
+
+.ingredients__inner {
+  @include content(flex, row, center, flex-end, $marg0auto);
+}
+
+.ingredients__block {
+  width: 570px;
+  height: 557px;
+  padding-top: 80px;
+  position: relative;
+  //border: 0.06px solid #fbf7c0;
+  background-color: rgba(0, 0, 0, 0.7019607843);
+}
+
+.ingredients_images {
+  width: 100%;
+  bottom: 30px;
+  height: 250px;
+  position: absolute;
+  //border: 5px solid rgba(255,255,255,0.09);
+
+  background: url("../Images/Main/Ingredients/image.png") no-repeat top;
+}
+
+//Menu
+.menu {
+  width: 100%;
+  padding: 100px 0;
+  min-height: 800px;
+
+  background: url("../Images/Main/Menu/pattern.png") no-repeat center/cover;
+}
+
+.menu__inner {
+  flex-wrap: wrap;
+  @include content(flex, row, center, space-between, $marg0auto);
+}
+
+.menu__column {
+  height: 100%;
+  @include content(flex, column, center, space-between, $marg0auto);
+}
+
+.menu__group {
+  @include content(flex, column, center, space-between, $marg0auto);
+}
+
+.menu__item {
+  height: 81px;
+  color: #c89f2d;
+  text-align: left;
+  line-height: 29px;
+  @include font($ffYesevaOne, 400, 21px);
+
+  .description {
+    color: black;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  &.special {
+    position: relative;
+    border: 1px solid #c89f2d;
+
+    .menu_tag {
+      top: -22px;
+      right: -1px;
+      width: 69px;
+      height: 22px;
+      color: #f8fafa;
+      line-height: 24px;
+      position: absolute;
+      text-align: center;
+
+      background: url("../Images/Main/Ingredients/special.png") no-repeat center;
+
+      @include font($ffLato, 400, 14px);
+    }
+  }
+}
+
+.menu__dish {
+  @include content(flex, row, center, space-between, $marg0auto);
+}
+
+.line {
+  height: 1px;
+  width: 430px;
+  background-color: #c89f2d;
+  border: 0.06px solid #fbf7c0;
+}
+
+//Reviews
+.reviews {
+  width: 100%;
+  padding: 100px 0;
+  min-height: 758px;
+
+  background: url("../Images/Main/Reviews/reviews.png") no-repeat center/cover;
+}
+
+.reviews__inner {
+  @include content(flex, row, center, center, $marg0auto);
+}
+
+.reviews__block {
+  width: 80%;
+  padding: 87px 0;
+  max-width: 774px;
+  min-height: 558px;
+  position: relative;
+
+  background: url("../Images/Main/Reviews/background.png") no-repeat center/cover;
+
+
+  &:before {
+    top: 160px;
+    left: 40px;
+    width: 32px;
+    content: '';
+    height: 25px;
+    position: absolute;
+
+    background: url("../Images/Main/Reviews/quotationMark.png") no-repeat center/cover;
+  }
+
+  .title {
+    //width: 370px;
+    //height: 73px;
+    color: #ffffff;
+  }
+
+  .main_divider {
+    background: url("../Images/Main/dividerMainWhite.png") no-repeat 33% 50%;
+  }
+
+  .description {
+    width: 630px;
+    color: #dde0df;
+    margin: 0 auto;
+    line-height: 45px;
+
+    @include font($ffGentiumBookBasic, 700, 25px);
+
+    .desc {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
+
+//Reservation
+.reservation {
+  width: 100%;
+  padding: 100px 0;
+  min-height: 710px;
+
+  background: url("../Images/Main/About/pattern.png") no-repeat center/cover;
+}
+
+.reservation__inner {
+  @include content(flex, row, center, space-between, $marg0auto);
+}
+
+.reservation__block {
+  min-width: 430px;
+  min-height: 508px;
+  text-align: center;
+  @include content(flex, column, center, space-between, 0 70px);
+
+  .description {
+    width: 432px;
+    color: #4c4c4c;
+    //margin: 25px auto;
+
+    &:nth-child(1) {
+      margin-bottom: 20px;
+    }
+  }
+
+  form {
+    width: 100%;
+
+    label {
+      color: #c9a131;
+      margin-bottom: 10px;
+
+      @include font($ffOpenSans, 700, 14px)
+    }
+
+    input {
+      width: 200px;
+      height: 36px;
+      padding: 10px 15px;
+      border: 1px solid #c8c6c6;
+      background-color: rgba(255, 255, 255, 0.4);
+
+      &::placeholder {
+        color: #7c7c7c;
+        font-style: italic;
+
+        @include font($ffOpenSans, 400, 16px);
+      }
+
+      //&:hover::-webkit-outer-spin-button,
+      //&:focus::-webkit-outer-spin-button{
+      //  opacity: 0.5;
+      //  -webkit-appearance: textfield;
+      //}
+      //
+      //&:hover::-webkit-inner-spin-button,
+      //&:focus::-webkit-inner-spin-button{
+      //  opacity: 0;
+      //  -webkit-appearance: textfield;
+      //}
+      //&::-webkit-inner-spin-button{
+      //  -webkit-appearance: none;
+      //}
+    }
+  }
+
+  button {
+    width: 200px;
+    height: 36px;
+    outline: none;
+    margin-top: 10px;
+    border: 1px solid #c89f2d;
+    background-color: rgba(200, 159, 45, 0.9803921568627451);
+
+    span {
+      color: #ffffff;
+
+      @include font($ffOpenSans, 400, 16px);
+    }
+  }
+}
+
+.form__groups {
+  @include content(flex, row, center, space-between, 0);
+
+  &:nth-child(1) {
+    margin-bottom: 25px;
+  }
+}
+
+.form__group {
+  @include content(flex, column, flex-start, space-between, 0);
+}
+
+
+/*=========Footer=========*/
+
+.footer{
+  color: white;
+  //min-height: 320px;
+  height: 320px;
+  background-color: #191919;
+}
+
+.footer__inner{
+
+}
+
+.footer__column{
+
+  .title{
+    @include font($ffYesevaOne, 400, 21px);
+
+    width: 170px;
+    height: 41px;
+    line-height: 24px;
+    color: #fefefe;
+  }
+
+  .description{
+    @include font($ffOpenSans, 400, 16px);
+
+    width: 370px;
+    height: 136px;
+    color: #ffffff;
+  }
+}
