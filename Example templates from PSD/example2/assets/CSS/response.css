@@ -1,0 +1,225 @@
+/*!          Media          !*/
+
+/* Large desktops and laptops */
+@media (min-width: 1850px) {
+    .container {
+        max-width: calc(100% - 10%);
+    }
+
+    .inner {
+        max-width: calc(100% - 5%);
+    }
+
+    .add-ons_blocks {
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 1099px) {
+    .container {
+        max-width: calc(100% - 10%);
+    }
+
+    .inner {
+        max-width: calc(100% - 5%);
+    }
+
+    ._3_block {
+        justify-content: space-around;
+    }
+
+    .block_img {
+        margin-top: 25px;
+    }
+
+    .others_inner {
+        flex-direction: column;
+    }
+
+    .others_title_logo {
+        margin-top: 25px;
+    }
+
+    .others_inner .block_description {
+        text-align: center;
+    }
+
+    .response_ready_context {
+        justify-content: space-around;
+    }
+
+    .testimonials_inner {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .down_cont_inner {
+        flex-direction: column;
+    }
+
+    .download_button {
+        margin-top: 25px;
+    }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1099px) {
+    ._2nd, ._3rd {
+        align-items: center;
+    }
+
+    ._4th {
+        align-items: flex-end;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    ._2nd, ._3rd {
+        align-items: center;
+    }
+
+    ._4th {
+        align-items: flex-end;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .main_title, .down_cont_text p:nth-child(1), .intro_title, .intro_title > h2 , .main_title > h2{
+        font-size: 25px;
+    }
+
+    .description, .block_description, .response_ready_context_inner .description, .down_cont_text p:nth-child(2),
+    .intro_description {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .intro_title, .intro_description, .intro_inner_button_cont {
+        text-align: center;
+    }
+
+    .intro_description, .response_ready_context_inner .description {
+        width: 100%;
+    }
+
+    ._1st, ._2nd, ._3rd, ._4th {
+        align-items: center;
+    }
+
+    .quote_desc {
+        width: 100%;
+        height: 100%;
+    }
+
+    .add-ons_blocks {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    ._1st, ._2nd, ._3rd, ._4th {
+        align-items: center;
+    }
+
+    .response_ready_image {
+        display: none;
+    }
+
+    .response_ready {
+        padding: 75px 0;
+    }
+
+    .response_ready_context_inner {
+        align-items: center;
+    }
+
+    .response_ready_context_inner .description {
+        text-align: center;
+    }
+
+    .social_media {
+        margin: 10px 0;
+    }
+
+    .phone {
+        display: none;
+    }
+}
+
+
+/*      World        */
+
+@media (max-width: 1399px) {
+    .world {
+        background-position: center;
+        background-blend-mode: luminosity;
+    }
+
+    .world_inner {
+        justify-content: center;
+    }
+
+    .world_inner .description, .world_inner .world_context_title {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .world_context .description {
+        color: #0f5f5c;;
+    }
+}
+
+
+/*      Pricing      */
+
+@media (max-width: 1035px) {
+    .plan {
+        margin: 25px
+    }
+}
+
+
+/*     Contact Us html   */
+
+/*   Form & Headquarter  */
+
+@media (max-width: 946px) {
+
+    .form_headquarter {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .form input, form textarea {
+        width: 300px;
+    }
+
+    .headquarter {
+        width: 100%;
+    }
+}
+
+@media (max-width: 333px) {
+    .form input, form textarea {
+        width: 260px;
+    }
+}

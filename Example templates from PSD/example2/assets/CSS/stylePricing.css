@@ -1,0 +1,238 @@
+/*   Header    */
+.header.pr {
+    background-color: #eef1ec;
+}
+
+.header_inner {
+    border-bottom: 1px solid #83a7a5;
+}
+
+.logo_link {
+    color: #0f5f5c;
+}
+
+.phone_line {
+    background-color: #83a7a5;;
+}
+
+.fa-phone {
+    color: #83a7a5;
+}
+
+.phone_num {
+    color: #83a7a5;;
+}
+
+.nav_link {
+    color: #83a7a5;
+}
+
+.nav_link.act {
+    opacity: 1;
+    color: #83a7a5;
+}
+
+.header_inner_but {
+    background-color: #6fb048;
+}
+
+.burger span {
+    background-color: #0f5f5c;
+}
+
+
+/*!*    Main   *!*/
+
+/*    Intro      */
+.intro {
+    width: 100%;
+    background-color: #eef1ec;
+}
+
+.intro_inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+    max-width: 1056px;
+}
+
+.intro_title > h2 {;
+    color: #0f5f5c;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 38px;
+    text-align: center;
+}
+
+.intro_inner .description {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 380px;
+}
+
+.plans {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0 30px;
+    justify-content: center;
+}
+
+.plan {
+    width: 255px;
+    height: 360px;
+    padding: 25px 60px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c1d3d2;
+    justify-content: space-between;
+}
+
+.plan_type {
+    color: #6fb048;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.plan_price_month {
+    color: #0f5f5c;
+    font-weight: 400;
+    text-align: center;
+}
+
+.plan_price_month p:nth-child(1) {
+    font-size: 65px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.plan_price_month p:nth-child(2) {
+    font-size: 14px;
+}
+
+.plan_description {
+    color: #83a7a5;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.plan_button {
+    width: 140px;
+    height: 42px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #83a7a5;
+}
+
+.plus .plan_button {
+    background-color: #6fb048;
+}
+
+.plan_button > span {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/*  Pricing  */
+
+.pricing {
+    padding: 75px 0 90px 0;
+}
+
+.pricing_inner {
+    margin: 0 auto;
+    max-width: 1056px;
+}
+
+.add-ons_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.add-ons_block {
+    display: flex;
+    color: #83a7a5;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    align-items: center;
+}
+
+.add-ons_block img {
+    margin-right: 10px;
+}
+
+.help_cont {
+    align-items: center;
+}
+
+.help_logo {
+    text-align: center;
+    margin: 60px 0 20px;
+}
+
+path {
+    fill: #6fb048;
+}
+
+.help_title > h2 {
+    color: #6fb048;
+    font-weight: 300;
+}
+
+.help_cont .description {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 560px;
+}
+
+.help_email {
+    color: #0f5f5c;
+    font-size: 18px;
+    margin-top: 40px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20px;
+}
+
+.down_cont {
+    background: linear-gradient(rgba(238, 241, 236, 0.9), rgba(238, 241, 236, 0.9)),
+    #eef1ec url("../Images/office image.png") no-repeat center /cover;
+}
+
+.down_cont_text p:nth-child(1) {
+    color: #0f5f5c;
+}
+
+.down_cont_text p:nth-child(2) {
+    color: #0f5f5c;
+}
+
+.download_button {
+    background-color: #6fb048;
+}
+
+.download_button > span {
+    color: #ffffff;
+}
+
+
+/*     Button Effect    */
+.effect_gray:hover {
+    background-color: #83a7a5;
+}
