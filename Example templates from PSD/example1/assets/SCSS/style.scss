@@ -502,11 +502,17 @@ header {
   background-color: #191919;
 }
 
-.footer__inner{
-
+.footer__inner {
+  @include content(flex, row, center, space-between, 0);
+  margin: 0 auto;
 }
 
 .footer__column{
+  @include content(flex, column, center, space-between, 0);
+
+  .main_divider {
+    background: url("../Images/Main/dividerMainWhite.png") no-repeat 47% 50%;
+  }
 
   .title{
     @include font($ffYesevaOne, 400, 21px);
@@ -519,9 +525,14 @@ header {
 
   .description{
     @include font($ffOpenSans, 400, 16px);
+    @include content(flex, column, center, space-between, 0);
 
     width: 370px;
     height: 136px;
     color: #ffffff;
+
+    b {
+      display: contents;
+    }
   }
 }
