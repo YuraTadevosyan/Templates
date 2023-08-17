@@ -1,0 +1,7 @@
+@mixin font($fontSize, $lineHeight, $color, $fontWeight: 400, $fontFamily: "Poppins") {
+  color: $color;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+  font-family: $fontFamily;
+}
