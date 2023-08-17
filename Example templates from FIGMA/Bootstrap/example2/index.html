@@ -19,10 +19,47 @@
     <link rel="stylesheet" href="assets/CSS/media.css">
 
     <!--  Font Awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
     <!--Header Content-->
-    <header class="container">
+    <header class="header container-fluid">
+        <nav class="navbar navbar-expand-lg container navbar-light fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-md-between" id="navbarToggler">
+                    <a class="navbar-brand" href="/">
+                        <img src="./assets/images/icons/logo.svg" alt="logo">
+                    </a>
+
+                    <div class="header__menu d-flex align-items-center justify-content-center">
+                        <a class="header__menu-link text-decoration-none mx-3" href="#">
+                            Demos
+                        </a>
+
+                        <a class="header__menu-link text-decoration-none mx-3" href="#">
+                            Features
+                        </a>
+
+                        <a class="header__menu-link text-decoration-none mx-3" href="#">
+                            Pricing
+                        </a>
+
+                        <a class="header__menu-link text-decoration-none mx-3" href="#">
+                            Contact
+                        </a>
+                    </div>
+
+                    <div class="d-flex">
+                        <button class="btn btn-primary-link rounded-pill py-3 me-3" type="button">Login</button>
+                        <button class="btn btn-primary rounded-pill py-3" type="button">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!--Body Content-->
