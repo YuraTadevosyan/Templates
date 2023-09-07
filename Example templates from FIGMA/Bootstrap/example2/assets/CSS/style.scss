@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", "Font Awesome 6 Brands", sans-serif;
 }
 
 html,
@@ -36,6 +36,13 @@ body {
 }
 
 .header {
+    padding-top: 50px;
+    background-image: url('../images/pages/intro.png');
+    background-position: 78px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FFF8F2;
+
     &__menu {
         &-link {
             transition: 0.3s ease-in-out all;
@@ -45,6 +52,56 @@ body {
                 color: $primary-color;
                 transition: 0.3s ease-in-out all;
             }
+        }
+    }
+
+    &__main {
+        max-width: 800px;
+        padding: 250px 0 350px;
+
+        &-title {
+            mix-blend-mode: difference;
+            @include font(64px, 90px, #e3f1f2, 700) // opposite color of #1c0e0d for changing color based background image
+        }
+
+        &-subtitle {
+            mix-blend-mode: difference;
+            @include font(20px, 36px, #bfdfe1) // opposite color of #40201E for changing color based background image
+        }
+    }
+}
+
+.footer {
+    &__navbar {
+        padding: 120px 0 52px;
+
+        &-top {
+            margin-bottom: 101px;
+
+            &__image {
+                max-height: 30px;
+            }
+
+            &__link {
+                @include font(18px, 24px, #1C0E0D);
+            }
+
+            &__brand {
+                color: #18063c;
+                cursor: pointer;
+                margin: 0 22px;
+                --fa-animation-duration: 5s;
+                --fa-fade-opacity: 0.6;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: #5BC17F;
+                }
+            }
+        }
+
+        &-terms {
+            padding-right: 108px;
         }
     }
 }
