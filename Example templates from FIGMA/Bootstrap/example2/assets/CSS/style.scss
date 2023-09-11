@@ -43,9 +43,14 @@ body {
     background-size: cover;
     background-color: #FFF8F2;
 
+    .navbar {
+        background-color: #FFF8F2;
+    }
+
     &__menu {
         &-link {
             transition: 0.3s ease-in-out all;
+
             @include font(18px, 24px, $primary-text-color);
 
             &:hover {
@@ -71,12 +76,110 @@ body {
     }
 }
 
+.stats {
+    top: -241px;
+    position: relative;
+    background-image: url('../images/pages/stats.png');
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+
+    &__results {
+        padding: 94px 0 55px;
+        max-width: 696px;
+
+        @include font(48px, 64px, #18063C, 600);
+
+        &-subtitle {
+            @include font(18px, 18px, #404040, 300);
+        }
+    }
+
+    &__features {
+        position: relative;
+
+        &-image {
+            top: 0;
+            right: 0;
+            z-index: 0;
+            width: 197px;
+            position: absolute;
+        }
+
+        &-title {
+            z-index: 1;
+            position: relative;
+
+            @include font(48px, 70px, #18063C, 600);
+        }
+
+        &-description {
+            max-width: 659px;
+            margin: 20px 0 64px;
+
+            @include font(18px, 36px, #404040, 300);
+        }
+
+        &-cards {
+            margin-bottom: 77px;
+
+            .col {
+                &:first-child {
+                    .stats__features-card {
+                        background-color: #70D0DC;
+                    }
+                }
+                &:nth-child(2) {
+                    .stats__features-card {
+                        background-color: #7562E0;
+                    }
+                }
+                &:last-child {
+                    .stats__features-card {
+                        background-color: #FA865F;
+                    }
+                }
+            }
+        }
+
+        &-card {
+            padding: 28px;
+            border-radius: 48px;
+
+            &__image-block {
+                width: 100%;
+                height: 88px;
+                max-width: 88px;
+                border-radius: 24px;
+                background: #FFFFFF7F;
+                box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06);
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+
+            &__title {
+                margin: 24px 0 10px;
+
+                @include font(28px, 28px, #FFFFFF, 600);
+            }
+
+            &__description {
+                @include font(18px, 26px, #FFFFFF, 300);
+            }
+        }
+    }
+}
+
 .footer {
     &__navbar {
         padding: 120px 0 52px;
 
         &-top {
-            margin-bottom: 101px;
+            margin-bottom: 60px;
 
             &__image {
                 max-height: 30px;
@@ -98,6 +201,11 @@ body {
                     color: #5BC17F;
                 }
             }
+        }
+
+        &-divider {
+            width: calc(100% - 24px);
+            margin-bottom: 40px;
         }
 
         &-terms {

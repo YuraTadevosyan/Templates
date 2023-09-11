@@ -23,39 +23,41 @@
 </head>
 <body>
     <!--Header Content-->
-    <header class="header container-fluid">
-        <nav class="navbar navbar-expand-lg container navbar-light fixed-top">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse justify-content-md-between" id="navbarToggler">
-                    <a class="navbar-brand" href="/">
-                        <img src="./assets/images/icons/logo.svg" alt="logo">
-                    </a>
-
-                    <div class="header__menu d-flex align-items-center justify-content-center">
-                        <a class="header__menu-link text-decoration-none mx-3" href="#">
-                            Demos
+                    <div class="collapse navbar-collapse justify-content-md-between" id="navbarToggler">
+                        <a class="navbar-brand" href="/">
+                            <img src="./assets/images/icons/logo.svg" alt="logo">
                         </a>
 
-                        <a class="header__menu-link text-decoration-none mx-3" href="#">
-                            Features
-                        </a>
+                        <div class="header__menu d-flex align-items-center justify-content-center">
+                            <a class="header__menu-link text-decoration-none mx-3" href="#">
+                                Demos
+                            </a>
 
-                        <a class="header__menu-link text-decoration-none mx-3" href="#">
-                            Pricing
-                        </a>
+                            <a class="header__menu-link text-decoration-none mx-3" href="#">
+                                Features
+                            </a>
 
-                        <a class="header__menu-link text-decoration-none mx-3" href="#">
-                            Contact
-                        </a>
-                    </div>
+                            <a class="header__menu-link text-decoration-none mx-3" href="#">
+                                Pricing
+                            </a>
 
-                    <div class="d-flex">
-                        <button class="btn btn-primary-link rounded-pill py-3 me-3" type="button">Login</button>
-                        <button class="btn btn-primary rounded-pill py-3" type="button">Sign up</button>
+                            <a class="header__menu-link text-decoration-none mx-3" href="#">
+                                Contact
+                            </a>
+                        </div>
+
+                        <div class="d-flex">
+                            <button class="btn btn-primary-link rounded-pill py-3 me-3" type="button">Login</button>
+                            <button class="btn btn-primary rounded-pill py-3" type="button">Sign up</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,17 +77,99 @@
     </header>
 
     <!--Body Content-->
-    <main class="container">
+    <main>
         <!--Stats Section-->
         <section class="stats">
+            <div class="stats__results row mx-auto">
+                <div class="col text-center">
+                    15k+
 
+                    <div class="stats__results-subtitle">
+                        Active user
+                    </div>
+                </div>
+                <div class="col text-center">
+                    30k
+
+                    <div class="stats__results-subtitle">
+                        Total Download
+                    </div>
+                </div>
+                <div class="col text-center">
+                    10k
+
+                    <div class="stats__results-subtitle">
+                        Customer
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats__features container d-flex flex-column align-items-center">
+                <img class="stats__features-image" src="./assets/images/pages/rocket.png" alt="Rocket">
+
+                <h2 class="stats__features-title text-center">
+                    Some excellent features for you
+                </h2>
+
+                <div class="stats__features-description text-center">
+                    An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula
+                </div>
+
+                <div class="stats__features-cards row">
+                    <div class="col">
+                        <div class="stats__features-card">
+                            <div class="stats__features-card__image-block d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/icons/features-1.svg" alt="Features image 1">
+                            </div>
+
+                            <h3 class="stats__features-card__title">
+                                Preset List of Task
+                            </h3>
+
+                            <div class="stats__features-card__description">
+                                Make bill payments easily using the wallet app
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="stats__features-card">
+                            <div class="stats__features-card__image-block d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/icons/features-2.svg" alt="Features image 2">
+                            </div>
+
+                            <h3 class="stats__features-card__title">
+                                Reminder of Task
+                            </h3>
+
+                            <div class="stats__features-card__description">
+                                Make bill payments easily using the wallet app
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="stats__features-card">
+                            <div class="stats__features-card__image-block d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/icons/features-3.svg" alt="Features image 3">
+                            </div>
+
+                            <h3 class="stats__features-card__title">
+                                Complecation Report
+                            </h3>
+
+                            <div class="stats__features-card__description">
+                                Make bill payments easily using the wallet app
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <!--Footer Content-->
     <footer class="w-100 footer">
         <div class="container">
-            <nav class="footer__navbar navbar fixed-bottom navbar-light bg-light">
+            <nav class="footer__navbar navbar navbar-light">
                 <div class="container d-flex flex-column">
                     <div class="footer__navbar-top row w-100 align-items-center justify-content-between">
                         <div class="col">
@@ -115,6 +199,9 @@
                             <i class="footer__navbar-top__brand fa-brands fa-twitter fa-fade"></i>
                         </div>
                     </div>
+
+                    <span class="footer__navbar-divider d-block border-top"></span>
+
                     <div class="row w-100 align-items-center justify-content-between">
                         <div class="col">
                             <span class="footer__navbar-terms">Terms & condition</span>
