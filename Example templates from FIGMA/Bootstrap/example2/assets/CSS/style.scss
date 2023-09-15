@@ -66,19 +66,24 @@ body {
 
         &-title {
             mix-blend-mode: difference;
+
             @include font(64px, 90px, #e3f1f2, 700) // opposite color of #1c0e0d for changing color based background image
         }
 
         &-subtitle {
             mix-blend-mode: difference;
+
             @include font(20px, 36px, #bfdfe1) // opposite color of #40201E for changing color based background image
         }
     }
 }
 
-.stats {
+.main {
     top: -241px;
     position: relative;
+}
+
+.stats {
     background-image: url('../images/pages/stats.png');
     background-position: 0;
     background-repeat: no-repeat;
@@ -170,6 +175,38 @@ body {
             &__description {
                 @include font(18px, 26px, #FFFFFF, 300);
             }
+        }
+    }
+}
+
+.analytics-reporting {
+    padding: 70px 0 140px;
+
+    &__block {
+        max-width: 600px;
+
+        &-title {
+            @include font(48px, 64px, #18063C, 600);
+        }
+
+        &-description {
+            padding-top: 20px;
+
+            @include font(18px, 35px, #404040, 400);
+        }
+    }
+
+    &__content {
+        margin-top: 48px;
+
+        &-title {
+            @include font(28px, 36px, #404040, 600);
+        }
+
+        &-description {
+            margin-top: 8px;
+
+            @include font(18px, 36px, #404040, 300, 'Inter');
         }
     }
 }
