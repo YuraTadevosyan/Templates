@@ -81,9 +81,12 @@ body {
   font-family: "Poppins";
 }
 
-.stats {
+.main {
   top: -241px;
   position: relative;
+}
+
+.stats {
   background-image: url("../images/pages/stats.png");
   background-position: 0;
   background-repeat: no-repeat;
@@ -176,6 +179,46 @@ body {
   line-height: 26px;
   font-weight: 300;
   font-family: "Poppins";
+}
+
+.analytics-reporting {
+  padding: 70px 0 140px;
+}
+.analytics-reporting__block {
+  max-width: 600px;
+}
+.analytics-reporting__block-title {
+  color: #18063C;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.analytics-reporting__block-description {
+  padding-top: 20px;
+  color: #404040;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+.analytics-reporting__content {
+  margin-top: 48px;
+}
+.analytics-reporting__content-title {
+  color: #404040;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.analytics-reporting__content-description {
+  margin-top: 8px;
+  color: #404040;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 300;
+  font-family: "Inter";
 }
 
 .footer__navbar {
