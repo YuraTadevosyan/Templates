@@ -36,6 +36,16 @@ body {
 .btn-primary-link:hover {
   color: #c35445;
 }
+.btn-primary-outlined {
+  color: #FF553E;
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+}
+.btn-primary-outlined:hover {
+  color: #FF553E;
+  background-color: rgba(255, 255, 255, 0.8980392157);
+  border-color: #FF553E;
+}
 
 .header {
   padding-top: 50px;
@@ -221,6 +231,177 @@ body {
   font-family: "Inter";
 }
 
+.tracking {
+  padding: 140px 0 156px;
+  background-image: url("../images/pages/tracking.png");
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F3FDFE;
+}
+.tracking__block-title {
+  margin-bottom: 20px;
+  color: #18063C;
+  font-size: 48px;
+  line-height: 70px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.tracking__block-description {
+  color: #404040;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 300;
+  font-family: "Inter";
+}
+.tracking__block-content {
+  margin-top: 64px;
+  max-width: 464px;
+}
+.tracking__block-content img {
+  margin-top: 13px;
+}
+.tracking__block-content__title {
+  color: #404040;
+  font-size: 28px;
+  line-height: 52px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.tracking__block-content__description {
+  margin-top: 8px;
+  color: #404040;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 300;
+  font-family: "Inter";
+}
+.tracking__image-column {
+  max-width: 682px;
+  position: absolute;
+  right: calc(50vw - 880px);
+}
+@media screen and (max-width: 1700px) {
+  .tracking__image-column {
+    max-width: 100%;
+    position: static;
+  }
+}
+
+.price {
+  padding: 140px 0 160px;
+  background-image: url("../images/pages/price.png");
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price-title {
+  color: #18063C;
+  font-size: 48px;
+  line-height: 70px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.price-description {
+  margin: 20px 0 48px;
+  color: #404040;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 300;
+  font-family: "Inter";
+}
+.price-switch {
+  padding: 0;
+}
+.price-switch input {
+  border: none !important;
+  width: 84px !important;
+  height: 40px !important;
+  margin: 0 20px !important;
+  box-shadow: none !important;
+  background-color: rgba(255, 85, 62, 0.2) !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='white'/%3e%3c/svg%3e") !important;
+  color: #404040;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+.price-switch input:focus {
+  background-color: rgba(255, 85, 62, 0.2) !important;
+}
+.price-switch input:checked {
+  background-color: #FF553E !important;
+}
+.price-plans {
+  margin-top: 64px;
+}
+.price-plan {
+  width: 100%;
+  margin: 0 15px;
+  max-width: 470px;
+  padding: 64px 0 48px;
+  border-radius: 110px;
+  border: 1px solid #FF553E;
+}
+.price-plan--primary {
+  background-color: #FF553E;
+}
+.price-plan__title {
+  margin-bottom: 56px;
+  color: #404040;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 600;
+  font-family: "Inter";
+}
+.price-plan__title--primary {
+  color: #FFFFFF;
+}
+.price-plan__details {
+  color: #FF553E;
+  font-size: 28px;
+  line-height: 52px;
+  font-weight: 600;
+  font-family: "Inter";
+}
+.price-plan__details--primary {
+  color: #FFFFFF;
+}
+.price-plan__bill {
+  position: relative;
+  margin: 64px 0 88px;
+  color: #404040;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+.price-plan__bill:before {
+  content: "$";
+  top: 0;
+  left: -10px;
+  position: absolute;
+  color: inherit;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+.price-plan__bill span {
+  margin-bottom: 6px;
+  color: #404040;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  font-family: "Poppins";
+}
+.price-plan__bill--primary {
+  color: #FFFFFF;
+}
+.price-plan__bill--primary span {
+  color: inherit;
+}
 .footer__navbar {
   padding: 120px 0 52px;
 }
