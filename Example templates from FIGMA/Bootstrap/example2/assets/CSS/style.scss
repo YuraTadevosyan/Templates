@@ -19,6 +19,7 @@ body {
     padding: 0 32px;
     border-color: $primary-color;
     background-color: $primary-color;
+
     @include font(18px, 28px, #FFFFFF);
 
     &:hover {
@@ -36,7 +37,7 @@ body {
 
     &-outlined {
         color: $primary-color;
-        border-color: #FFFFFF;
+        border-color: $primary-color;
         background-color: #FFFFFF;
 
         &:hover {
@@ -91,8 +92,7 @@ body {
 }
 
 .main {
-    top: -241px;
-    position: relative;
+    margin-top: -241px;
 }
 
 .stats {
@@ -378,8 +378,128 @@ body {
                 }
             }
         }
+    }
+}
 
-        button {
+.partners {
+    padding: 120px 0 80px;
+    background-color: #F8FEFE;
+
+    img {
+        max-width: 799px;
+    }
+
+    &-content {
+        &__block {
+            padding-left: 100px;
+            max-width: 571px;
+
+            &-title {
+                @include font(48px, 70px, #18063C, 600);
+            }
+
+            &-description {
+                @include font(18px, 36px, #404040, 400, 'Inter');
+            }
+
+            button {
+                width: fit-content;
+            }
+        }
+    }
+}
+
+.feedbacks {
+    padding: 173px 0 140px;
+    background-image: url('../images/pages/what-client-says.png');
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 878px;
+
+    &-title {
+        @include font(48px, 70px, #18063C, 600);
+    }
+
+    &-description {
+        @include font(18px, 36px, #404040, 400, 'Inter');
+    }
+
+    &-content {
+        margin-top: 60px;
+
+        &__image-block {
+            height: 379px;
+            max-width: 298px;
+            border-radius: 370px;
+            background-color: #FFF8F2;
+        }
+
+        &__block {
+            &-title {
+                @include font(24px, 24px, #38363C, 500, 'Inter');
+            }
+
+            &-subtitle {
+                margin: 16px 0 28px;
+
+                @include font(18px, 28px, #38363C, 300, 'Inter');
+            }
+
+            &-description {
+                max-width: 952px;
+                margin-bottom: 36px;
+
+                @include font(20px, 36px, #404040, 400, 'Inter');
+            }
+        }
+
+        &__accordion {
+            margin-top: 28px;
+
+            &-btn {
+                width: 12px;
+                height: 12px;
+                border: none;
+                box-shadow: none;
+                border-radius: 100%;
+                margin-right: 10px;
+                background-color: #FF553E33;
+
+                &--selected {
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.get-it-now {
+    padding-top: 100px;
+    background-image: url('../images/pages/get-it-now.png');
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img {
+        max-width: 405px;
+    }
+
+    &-content {
+        &__block {
+            padding-right: 111px;
+
+            &-title {
+                @include font(48px, 70px, #18063C, 600);
+            }
+
+            &-description {
+                @include font(18px, 36px, #404040, 400, 'Inter');
+            }
+
+            button {
+                width: fit-content;
+            }
         }
     }
 }
