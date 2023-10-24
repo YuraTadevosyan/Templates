@@ -1,28 +1,45 @@
-/* Extra small -- less than 576px */
-@media only screen and (min-width: 0px) {
+/* Large -- less than 993px */
+@media only screen and (max-width: 993px) {
+  .get-it-now {
+    padding: 48px 0;
+    background-image: url("../images/pages/get-it-now--mobile.png");
+  }
+  .get-it-now-content__block {
+    padding-right: 0;
+  }
+  .get-it-now-content__block-title {
+    color: #332C5C;
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .get-it-now-content__block-description {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px !important;
+  }
+  .get-it-now-content__block button {
+    width: fit-content;
+  }
+  .footer__navbar {
+    padding: 80px 0 40px;
+  }
+  .footer__navbar-top {
+    margin-bottom: 40px;
+  }
+  .footer__navbar-divider + div {
+    opacity: 0.5;
+    color: #404040;
+  }
 }
-
-/* Small -- more than 575px */
-@media only screen and (min-width: 576px) {
-}
-
-/* Medium -- more than 767px */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large -- more than 991px */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large -- more than 1199px */
-@media only screen and (min-width: 1200px) {
-}
-
 /* More than 1400px */
 @media only screen and (min-width: 1400px) {
-    .container {
-        max-width: 1200px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+  .container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
+
+/*# sourceMappingURL=media.css.map */
