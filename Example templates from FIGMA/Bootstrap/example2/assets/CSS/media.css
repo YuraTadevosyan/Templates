@@ -1,5 +1,86 @@
 /* Large -- less than 993px */
 @media only screen and (max-width: 993px) {
+  .partners {
+    padding: 0;
+    background: none;
+  }
+  .partners img {
+    max-width: 256px;
+  }
+  .partners-content__block {
+    padding-left: 0;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .partners-content__block-title {
+    text-align: left;
+    color: #332C5C;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .partners-content__block-description {
+    margin: 18px 0 28px !important;
+    color: #1C0E0D;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  .feedbacks {
+    padding: 80px 0;
+    background-size: 201px 170px;
+    background-position: 100% 47px;
+    background-image: url("../images/pages/what-client-says--mobile.png");
+  }
+  .feedbacks-title {
+    text-align: left;
+    color: #332C5C;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .feedbacks-description {
+    display: none;
+  }
+  .feedbacks-content {
+    margin-top: 30px;
+  }
+  .feedbacks-content__image-block {
+    height: 144px;
+    max-width: 170px;
+    border-radius: 40px;
+  }
+  .feedbacks-content__block-title {
+    color: #38363C;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Inter";
+  }
+  .feedbacks-content__block-subtitle {
+    display: block;
+    margin: 10px 0 14px;
+    color: #38363C;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Inter";
+  }
+  .feedbacks-content__block-description {
+    max-width: 100%;
+    margin: 30px 0 28px;
+    color: #1C0E0D;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  .feedbacks-content__accordion {
+    margin-top: 0;
+  }
   .get-it-now {
     padding: 48px 0;
     background-image: url("../images/pages/get-it-now--mobile.png");
