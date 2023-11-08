@@ -1,5 +1,124 @@
 /* Large -- less than 993px */
 @media only screen and (max-width: 993px) {
+  .tracking {
+    padding: 48px 0 0;
+    background-size: 104px;
+    background-position: 100% 0;
+    background-image: url("../images/pages/tracking--mobile.png");
+  }
+  .tracking__block-title {
+    margin-bottom: 36px;
+    color: #18063C;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .tracking__block-content {
+    margin-top: 0;
+    max-width: 100%;
+  }
+  .tracking__block-content img {
+    margin-top: 0;
+    max-width: 56px;
+    max-height: 56px;
+    margin-right: 18px;
+  }
+  .tracking__block-content__title {
+    color: #404040;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .tracking__block-content__description {
+    margin-top: 10px;
+    color: #404040;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: "Inter";
+  }
+  .price {
+    padding: 80px 0;
+    background-image: none;
+  }
+  .price-title {
+    text-align: center;
+    margin-bottom: 0;
+    color: #18063C;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .price-description {
+    margin: 10px 0 16px;
+    color: #404040;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  .price-plans {
+    margin-top: 40px;
+  }
+  .price-plan {
+    width: 100%;
+    margin: 0 15px;
+    max-width: 100%;
+    padding: 36px 26px;
+    border-radius: 30px;
+  }
+  .price-plan:first-child {
+    margin-bottom: 28px;
+  }
+  .price-plan__title {
+    margin-bottom: 29px;
+    color: #404040;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: "Inter";
+  }
+  .price-plan__title--primary {
+    color: #FFFFFF;
+  }
+  .price-plan__details {
+    color: #FF553E;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Inter";
+  }
+  .price-plan__details--primary {
+    color: #FFFFFF;
+  }
+  .price-plan__bill {
+    margin: 0;
+    margin-bottom: 29px;
+    position: relative;
+    color: #404040;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+    font-family: "Poppins";
+  }
+  .price-plan__bill:before {
+    top: -2px;
+  }
+  .price-plan__bill span {
+    margin-bottom: 0;
+  }
+  .price-plan__bill--primary {
+    color: #FFFFFF;
+  }
+  .price-plan__bill--primary span {
+    color: inherit;
+  }
+  .price-plan .btn {
+    margin-top: 30px;
+  }
   .partners {
     padding: 0;
     background: none;
