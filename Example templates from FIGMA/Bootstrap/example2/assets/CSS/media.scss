@@ -1,7 +1,126 @@
 @import "mixins";
+@import "variables";
 
 /* Large -- less than 993px */
 @media only screen and (max-width: 993px) {
+    .tracking {
+        padding: 48px 0 0;
+        background-size: 104px;
+        background-position: 100% 0;
+        background-image: url('../images/pages/tracking--mobile.png');
+
+        &__block {
+            &-title {
+                margin-bottom: 36px;
+
+                @include font(24px, 36px, #18063C, 600);
+            }
+
+            &-content {
+                margin-top: 0;
+                max-width: 100%;
+
+                img {
+                    margin-top: 0;
+                    max-width: 56px;
+                    max-height: 56px;
+                    margin-right: 18px;
+                }
+
+                &__title {
+                    @include font(18px, 24px, #404040, 600);
+                }
+
+                &__description {
+                    margin-top: 10px;
+
+                    @include font(14px, 24px, #404040, 300, 'Inter');
+                }
+            }
+        }
+
+    }
+
+    .price {
+        padding: 80px 0;
+        background-image: none;
+
+        &-title {
+            text-align: center;
+            margin-bottom: 0;
+
+            @include font(24px, 36px, #18063C, 600);
+        }
+
+        &-description {
+            margin: 10px 0 16px;
+
+            @include font(16px, 36px, #404040, 400);
+        }
+
+        &-plans {
+            margin-top: 40px;
+        }
+
+        &-plan {
+            width: 100%;
+            margin: 0 15px;
+            max-width: 100%;
+            padding: 36px 26px;
+            border-radius: 30px;
+
+            &:first-child {
+                margin-bottom: 28px;
+            }
+
+            &__title {
+                margin-bottom: 29px;
+
+                @include font(20px, 20px, #404040, 600, 'Inter');
+
+                &--primary {
+                    color: #FFFFFF;
+                }
+            }
+
+            &__details {
+                @include font(18px, 20px, $primary-color, 400, 'Inter');
+
+                &--primary {
+                    color: #FFFFFF;
+                }
+            }
+
+            &__bill {
+                margin: 0;
+                margin-bottom: 29px;
+                position: relative;
+
+                @include font(28px, 28px, #404040, 700);
+
+                &:before {
+                    top: -2px;
+                }
+
+                span {
+                    margin-bottom: 0;
+                }
+
+                &--primary {
+                    color: #FFFFFF;
+
+                    span {
+                        color: inherit;
+                    }
+                }
+            }
+
+            .btn {
+                margin-top: 30px;
+            }
+        }
+    }
+
     .partners {
         padding: 0;
         background: none;
