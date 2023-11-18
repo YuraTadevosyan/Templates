@@ -159,6 +159,7 @@ body {
   background-color: #FA865F;
 }
 .stats__features-card {
+  height: 100%;
   padding: 28px;
   border-radius: 48px;
 }
