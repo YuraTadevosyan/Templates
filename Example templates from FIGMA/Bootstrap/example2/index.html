@@ -27,52 +27,58 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse justify-content-md-between" id="navbarToggler">
-                        <a class="navbar-brand" href="/">
+                    <div class="d-flex justify-content-between align-items-center d-lg-block">
+                        <a class="navbar-brand d-lg-none" href="/">
                             <img src="./assets/images/icons/logo.svg" alt="logo">
                         </a>
 
-                        <div class="header__menu d-flex align-items-center justify-content-center">
-                            <a class="header__menu-link text-decoration-none mx-3" href="#">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse justify-content-md-between shadow p-3 p-lg-0" id="navbarToggler">
+                        <a class="navbar-brand d-none d-lg-block" href="/">
+                            <img src="./assets/images/icons/logo.svg" alt="logo">
+                        </a>
+
+                        <div class="header__menu d-flex flex-column flex-lg-row align-items-start align-items-md-center justify-content-center">
+                            <a class="header__menu-link text-decoration-none my-3 my-lg-0 mx-1 mx-lg-3" href="#">
                                 Demos
                             </a>
 
-                            <a class="header__menu-link text-decoration-none mx-3" href="#">
+                            <a class="header__menu-link text-decoration-none my-3 my-lg-0 mx-1 mx-lg-3" href="#">
                                 Features
                             </a>
 
-                            <a class="header__menu-link text-decoration-none mx-3" href="#">
+                            <a class="header__menu-link text-decoration-none my-3 my-lg-0 mx-1 mx-lg-3" href="#">
                                 Pricing
                             </a>
 
-                            <a class="header__menu-link text-decoration-none mx-3" href="#">
+                            <a class="header__menu-link text-decoration-none my-3 my-lg-0 mx-1 mx-lg-3" href="#">
                                 Contact
                             </a>
                         </div>
 
                         <div class="d-flex">
-                            <button class="btn btn-primary-link rounded-pill py-3 me-3" type="button">Login</button>
-                            <button class="btn btn-primary rounded-pill py-3" type="button">Sign up</button>
+                            <button class="btn btn-primary-link rounded-pill py-2 py-lg-3 me-3" type="button">Login</button>
+                            <button class="btn btn-primary rounded-pill py-2 py-lg-3" type="button">Sign up</button>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <div class="header__main d-flex flex-column align-items-center justify-content-center mx-auto">
-            <h1 class="header__main-title text-center">
+        <div class="header__main d-flex flex-column align-items-start align-items-lg-center justify-content-center mx-auto px-3 px-lg-0">
+            <h1 class="header__main-title text-lg-center">
                 A collaborative  Time Tracking that you Need
             </h1>
 
-            <p class="header__main-subtitle text-center my-3">
+            <p class="header__main-subtitle text-lg-center my-3">
                 An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula
             </p>
 
-            <button class="btn btn-primary rounded-pill py-3" type="button">Start 14 Days Trial</button>
+            <button class="btn btn-primary rounded-pill my-5 my-lg-0 py-4 py-lg-3" type="button">Start 14 Days Trial</button>
         </div>
     </header>
 
