@@ -1,5 +1,46 @@
 /* Large -- less than 993px */
 @media only screen and (max-width: 991px) {
+  .header {
+    padding-top: 56px;
+    background-image: url("../images/pages/intro--mobile.png");
+    background-position: 0 95px;
+  }
+  .header .navbar {
+    background-color: #FFF8F2;
+  }
+  .header__menu-link {
+    transition: 0.3s ease-in-out all;
+    color: #1C0E0D;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  .header__menu-link:hover {
+    color: #FF553E;
+    transition: 0.3s ease-in-out all;
+  }
+  .header__main {
+    max-width: 400px;
+    padding: 75px 0 85px;
+  }
+  .header__main-title {
+    mix-blend-mode: difference;
+    color: #e3f1f2;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: "Poppins";
+  }
+  .header__main-subtitle {
+    margin: 0 !important;
+    mix-blend-mode: difference;
+    color: #bfdfe1;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
   .main {
     margin-top: 0;
   }
