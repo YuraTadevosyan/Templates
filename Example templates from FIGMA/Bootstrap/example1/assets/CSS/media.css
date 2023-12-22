@@ -1,206 +1,427 @@
-/* Extra small -- less than 576px */
-@media only screen and (min-width: 0px) {
+/* Large -- less than 993px */
+@media only screen and (max-width: 991px) {
+  .header {
+    padding-top: 56px;
+    background-image: url("../images/pages/intro--mobile.png");
+    background-position: 0 95px;
+  }
+  .header .navbar {
+    background-color: #FFF8F2;
+  }
+  .header__menu-link {
+    transition: 0.3s ease-in-out all;
+    color: #1C0E0D;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  .header__menu-link:hover {
+    color: #FF553E;
+    transition: 0.3s ease-in-out all;
+  }
+  .header__main {
+    max-width: 400px;
+    padding: 75px 0 85px;
+  }
+  .header__main-title {
+    mix-blend-mode: difference;
+    color: #e3f1f2;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: "Poppins";
+  }
+  .header__main-subtitle {
+    margin: 0 !important;
+    mix-blend-mode: difference;
+    color: #bfdfe1;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  .main {
+    margin-top: 0;
+  }
+  .stats {
+    background-image: none;
+  }
+  .stats__results {
+    padding: 0;
+    max-width: 100%;
+    color: #18063C;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .stats__results-subtitle {
+    margin-top: 28px;
+    color: #404040;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
+    font-family: "Poppins";
+  }
+  .stats__results-divider {
+    width: 180px;
+    height: 1px;
+    background-color: #1E0C3E;
+  }
+  .stats__results > div {
+    padding: 48px 0;
+  }
+  .stats__features {
+    position: relative;
+  }
+  .stats__features-image {
+    top: -82px;
+    left: 0;
+    z-index: 0;
+    width: 100px;
+    position: absolute;
+  }
+  .stats__features-title {
+    text-align: center;
+    color: #18063C;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .stats__features-description {
+    max-width: 100%;
+    margin: 14px 0 28px;
+    color: #404040;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 300;
+    font-family: "Poppins";
+  }
+  .stats__features-cards {
+    margin-bottom: 0;
+  }
+  .stats__features-card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .stats__features-card__image-block {
+    width: 100%;
+    height: 60px;
+    max-width: 60px;
+  }
+  .stats__features-card__image-block img {
+    width: 32px;
+    height: 32px;
+  }
+  .stats__features-card__title {
+    margin-top: 18px;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .stats__features-card__description {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    font-family: "Poppins";
+  }
+  .analytics-reporting {
+    padding: 60px 0;
+  }
+  .analytics-reporting__block {
+    max-width: 100%;
+  }
+  .analytics-reporting__block-title {
+    color: #18063C;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .analytics-reporting__block-description {
+    padding-top: 16px;
+    color: #404040;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  .analytics-reporting__contents {
+    margin-top: 12px;
+  }
+  .analytics-reporting__content {
+    margin-top: 24px;
+  }
+  .analytics-reporting__content img {
+    width: 56px;
+    height: 56px;
+  }
+  .analytics-reporting__content-title {
+    color: #404040;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .analytics-reporting__content-description {
+    margin-top: 10px;
+    color: #404040;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+    font-family: "Inter";
+  }
+  .tracking {
+    padding: 48px 0 0;
+    background-size: 104px;
+    background-position: 100% 0;
+    background-image: url("../images/pages/tracking--mobile.png");
+  }
+  .tracking__block-title {
+    margin-bottom: 36px;
+    color: #18063C;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .tracking__block-content {
+    margin-top: 0;
+    max-width: 100%;
+  }
+  .tracking__block-content img {
+    margin-top: 0;
+    max-width: 56px;
+    max-height: 56px;
+    margin-right: 18px;
+  }
+  .tracking__block-content__title {
+    color: #404040;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .tracking__block-content__description {
+    margin-top: 10px;
+    color: #404040;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: "Inter";
+  }
+  .price {
+    padding: 80px 0;
+    background-image: none;
+  }
+  .price-title {
+    text-align: center;
+    margin-bottom: 0;
+    color: #18063C;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .price-description {
+    margin: 10px 0 16px;
+    color: #404040;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  .price-plans {
+    margin-top: 40px;
+  }
+  .price-plan {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+    padding: 36px 26px;
+    border-radius: 30px;
+  }
+  .price-plan:first-child {
+    margin-bottom: 28px;
+  }
+  .price-plan__title {
+    margin-bottom: 29px;
+    color: #404040;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: "Inter";
+  }
+  .price-plan__title--primary {
+    color: #FFFFFF;
+  }
+  .price-plan__details {
+    color: #FF553E;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Inter";
+  }
+  .price-plan__details--primary {
+    color: #FFFFFF;
+  }
+  .price-plan__bill {
+    margin: 0;
+    margin-bottom: 29px;
+    position: relative;
+    color: #404040;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+    font-family: "Poppins";
+  }
+  .price-plan__bill:before {
+    top: -2px;
+  }
+  .price-plan__bill span {
+    margin-bottom: 0;
+  }
+  .price-plan__bill--primary {
+    color: #FFFFFF;
+  }
+  .price-plan__bill--primary span {
+    color: inherit;
+  }
+  .price-plan .btn {
+    margin-top: 30px;
+  }
+  .partners {
+    padding: 0;
+    background: none;
+  }
+  .partners img {
+    max-width: 256px;
+  }
+  .partners-content__block {
+    padding-left: 0;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .partners-content__block-title {
+    text-align: left;
+    color: #332C5C;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .partners-content__block-description {
+    margin: 18px 0 28px !important;
+    color: #1C0E0D;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  .feedbacks {
+    padding: 80px 0;
+    background-size: 201px 170px;
+    background-position: 100% 47px;
+    background-image: url("../images/pages/what-client-says--mobile.png");
+  }
+  .feedbacks-title {
+    text-align: left;
+    color: #332C5C;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .feedbacks-description {
+    display: none;
+  }
+  .feedbacks-content {
+    margin-top: 30px;
+  }
+  .feedbacks-content__image-block {
+    height: 144px;
+    max-width: 170px;
+    border-radius: 40px;
+  }
+  .feedbacks-content__block-title {
+    color: #38363C;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Inter";
+  }
+  .feedbacks-content__block-subtitle {
+    display: block;
+    margin: 10px 0 14px;
+    color: #38363C;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Inter";
+  }
+  .feedbacks-content__block-description {
+    max-width: 100%;
+    margin: 30px 0 28px;
+    color: #1C0E0D;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  .feedbacks-content__accordion {
+    margin-top: 0;
+  }
+  .get-it-now {
+    padding: 48px 0;
+    background-image: url("../images/pages/get-it-now--mobile.png");
+  }
+  .get-it-now-content__block {
+    padding-right: 0;
+  }
+  .get-it-now-content__block-title {
+    color: #332C5C;
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+  .get-it-now-content__block-description {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px !important;
+  }
+  .get-it-now-content__block button {
+    width: fit-content;
+  }
+  .footer__navbar {
+    padding: 80px 0 40px;
+  }
+  .footer__navbar-top {
+    margin-bottom: 40px;
+  }
+  .footer__navbar-divider + div {
+    opacity: 0.5;
+    color: #404040;
+  }
 }
-
-/* Small -- more than 575px */
-@media only screen and (min-width: 576px) {
-    /*  Main  */
-
-    /*  Intro  */
-    .statistics .col {
-        padding: 0 15px;
-    }
-
-    .statistic-title {
-        font-size: 36px;
-        line-height: 40px;
-    }
-    .statistic-subtitle {
-        font-size: 16px;
-    }
-
-    /*  Learn History  */
-    .history-views {
-        font-size: 16px;
-        line-height: 24px;
-    }
-}
-
-/* Medium -- more than 767px */
-@media only screen and (min-width: 768px) {
-    /*  Main  */
-
-    .section-title {
-        font-size: 48px;
-        line-height: 58px;
-        margin-bottom: 56px;
-    }
-
-    /*  Intro  */
-    .intro-title {
-        font-size: 64px;
-        line-height: 82px;
-    }
-
-    .intro-subtitle {
-        font-size: 16px;
-        line-height: 24px;
-    }
-}
-
-/* Large -- more than 991px */
+/* More than 991px */
 @media only screen and (min-width: 992px) {
-    /*  Header */
-    .navbar-block {
-        width: 100% !important;
-    }
-
-    /*  Intro  */
-    .statistics {
-        padding: 24px 47px;
-    }
-
-    /*  Nfts  */
-    .nfts {
-        padding: 0 98px;
-    }
-
-    .nfts-section .section-title {
-        margin-bottom: 104px;
-    }
-
-    .nfts > div:nth-child(2) {
-        top: -48px;
-        border-radius: 8px;
-        background: linear-gradient(0deg, #301C49, #301C49),
-        linear-gradient(134.83deg, rgba(197, 34, 228, 0.3) 0%, rgba(90, 25, 244, 0.3) 96.35%);
-        border: 2px solid;
-        border-image-slice: 1;
-        border-image-source: linear-gradient(134.83deg, rgba(197, 34, 228, 0.3) 0%, rgba(90, 25, 244, 0.3) 96.35%);
-    }
+  .analytics-reporting .container {
+    max-width: 100%;
+  }
+}
+/* More than 1400px */
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-/* Extra large -- more than 1199px */
-@media only screen and (min-width: 1200px) {
-    .container {
-        max-width: 1240px;
-    }
-
-    /*  Header */
-    header .navbar-nav {
-        margin-right: 82px;
-    }
-
-    /*  Main  */
-
-    /* Intro */
-    .intro-title {
-        max-width: 430px;
-    }
-
-    .img-col {
-        right: calc(-50vw + 628px)
-    }
-
-    /*  Learn History  */
-    .see-more-block {
-        margin-left: 66px;
-    }
-
-    .see-more-block i {
-        margin-left: 66px;
-    }
-
-    .history-images {
-        margin: 0 45px;
-    }
-
-    /*  Sellers  */
-    .sellers-section .carousel-inner {
-        max-width: calc(100% - 218px);
-    }
-
-    #sellersCarousel .card-title {
-        font-size: 18px
-    }
-}
-
-/* More than 1440px */
-@media only screen and (min-width: 1441px) {
-    /*  Main  */
-
-    /* Intro */
-    .intro-section.blured-section:before {
-        width: 514px;
-        height: 514px;
-    }
-
-    .intro-section.blured-section:before {
-        left: 123px;
-    }
-
-    .img-col {
-        right: 0;
-    }
-
-    .img-col.blured-section:before {
-        top: 27px;
-        left: -47px;
-        width: 326px;
-        height: 326px;
-        filter: blur(600px);
-    }
-
-    .img-col.blured-section:after {
-        top: -133px;
-        right: 231px;
-        width: 514px;
-        height: 514px;
-        filter: blur(600px);
-    }
-
-    /*  Learn History */
-    .history-section.blured-section:before {
-        top: -361px;
-        left: 60px;
-        width: 514px;
-        height: 514px;
-        filter: blur(400px);
-    }
-
-    /* NFTs */
-    .nfts-section.blured-section:before {
-        left: 408px;
-        width: 514px;
-        height: 514px;
-    }
-
-    /* Galleries */
-    .galleries-section.blured-section:before {
-        left: -56px;
-        width: 588px;
-        height: 588px;
-    }
-
-    /*  Sellers  */
-    .sellers-section.blured-section:before {
-        width: 478px;
-        height: 478px;
-        left: calc(50% + 85px);
-    }
-
-    /*  Blogs  */
-    .blogs-section.blured-section:after,
-    .blogs-section.blured-section:before {
-        width: 454px;
-        height: 454px;
-    }
-
-    .blogs-section.blured-section:before {
-        left: -100px;
-    }
-
-    .blogs-section.blured-section:after {
-        right: -100px;
-    }
-}
+/*# sourceMappingURL=media.css.map */
