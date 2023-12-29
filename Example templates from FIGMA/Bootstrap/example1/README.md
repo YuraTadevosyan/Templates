@@ -1,10 +1,10 @@
 # Example Template
 
 ## Figma
-https://www.figma.com/file/wFfADqJaSaXcsLtfb6oKgY/Boostrap-4-Template?node-id=0%3A1
+https://www.figma.com/file/qSfCqAEtvFr8lITMCVvlQ5/Boostrap-5-Template?node-id=0%3A5
 
 ## Used Technologies
 - HTML / HTML5
 - CSS / CSS3
-- Boostrap 4
+- Boostrap 5
 - Font Awesome
